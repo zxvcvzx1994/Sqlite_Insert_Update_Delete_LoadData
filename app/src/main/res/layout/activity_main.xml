@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.kh.myapplication.MainActivity">
+
+   <EditText
+       android:id="@+id/etId"
+       android:hint="Id"
+       android:inputType="number"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+   <EditText
+       android:id="@+id/etTask"
+       android:hint="Task"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+   <EditText
+       android:id="@+id/etDoi"
+       android:hint="Doi"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <TextView
+            android:id="@+id/txtData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnInsert"
+            android:text="Insert"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnUpdate"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnLoadData"
+        android:text="Load Data"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
